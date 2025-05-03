@@ -1,0 +1,10 @@
+{
+    "build": {
+      "env": {
+        "DISCORD_BOT_TOKEN": "set-in-railway-dashboard"
+      },
+      "command": "pip install -r requirements.txt"
+    },
+    "start": "python main.py"
+  }
+  
