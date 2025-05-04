@@ -1,0 +1,20 @@
+services:
+  - name: telegram-price-bot
+    type: web
+    env: python
+    rootDir: telegram-price-bot
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+
+  - name: discord-price-bot
+    type: web
+    env: python
+    rootDir: discord-price-bot
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: DISCORD_BOT_TOKEN
+        sync: false
