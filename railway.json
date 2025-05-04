@@ -1,0 +1,15 @@
+{
+    "services": {
+      "telegram": {
+        "sourceDir": "telegram-price-bot",
+        "buildCommand": "pip install -r requirements.txt",
+        "startCommand": "python main.py"
+      },
+      "discord": {
+        "sourceDir": "discord-price-bot",
+        "buildCommand": "pip install -r requirements.txt",
+        "startCommand": "python main.py"
+      }
+    }
+  }
+  
